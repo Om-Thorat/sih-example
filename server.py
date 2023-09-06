@@ -16,7 +16,7 @@ def home(path):
 
 @app.route("/rand")
 def hello():
-    return str(random.randint(0, 100))
+    return str(random.randint(0,500))
 
 
 if __name__ == "__main__":
