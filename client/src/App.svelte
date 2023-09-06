@@ -1,4 +1,5 @@
 <script>
+  import Asdas from "./lib/Asdas.svelte";
   let rand = -1;
 
   function getRand() {
@@ -8,5 +9,6 @@
   }
 </script>
 
-<h1>Your number is {rand}!</h1>
+<h1>Our Love is {rand}!</h1>
 <button on:click={getRand}>Get a random number</button>
+<Asdas />
