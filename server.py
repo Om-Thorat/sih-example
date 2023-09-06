@@ -1,4 +1,5 @@
 from flask import Flask, send_from_directory
+
 import random
 
 app = Flask(__name__)
@@ -18,6 +19,9 @@ def home(path):
 def hello():
     return str(random.randint(0, 100))
 
-
+@app.route("/string")
+def color():
+    a=['red', 'blue', 'green', 'yellow', 'pink']
+    return str(random.choice(a))
 if __name__ == "__main__":
     app.run(debug=True)
